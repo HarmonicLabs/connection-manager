@@ -1,0 +1,1 @@
+![](/assets/readme/connection-manager.png)
