@@ -1,17 +1,14 @@
+export type ConnectionType = "inbound" | "outbound" | "duplex";
+
 export enum ConnectionState 
 {
-    Reserved = "Reserved",
-    NegotiatedOutbound = "NegotiatedOutbound",
-    NegotiatedInbound = "NegotiatedInbound",
-    PromotedToWarmDuplexLocal = "PromotedToWarmDuplexLocal",
-    AwakeDuplexLocal = "AwakeDuplexLocal",
-    Accepted = "Accepted",
-    Overwritten = "Overwritten",
+    Cold = "Cold",
+    Warm = "Warm",
+    Hot = "Hot",
 };
-  
+
 export type Connection = {
-    id: string;
     state: ConnectionState;
-    type: "inbound" | "outbound" | "duplex";
+    type: ConnectionType;
     peerAddress: string;
 };
