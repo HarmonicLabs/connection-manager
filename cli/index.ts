@@ -10,8 +10,7 @@ program
 
 program
     .command("start")
-    .description("starts the WSS")
-    .argument("[path]", "path to the env file containing server access credentials")
+    .description("starts the Connection Manager")
     .action(() => {
         execSync(`node ./dist/src/index.js`, { stdio: "inherit" })
     });
