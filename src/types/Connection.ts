@@ -1,3 +1,5 @@
+import { WebSocket } from "ws";
+
 export type ConnectionType = "inbound" | "outbound" | "duplex";
 
 export enum ConnectionState 
@@ -10,5 +12,5 @@ export enum ConnectionState
 export type Connection = {
     state: ConnectionState;
     type: ConnectionType;
-    peerAddress: string;
+    webSocket: WebSocket;
 };
