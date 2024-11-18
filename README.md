@@ -1,4 +1,4 @@
-it refers to the ![Cardano Network Specification](https://ouroboros-network.cardano.intersectmbo.org/pdfs/network-spec/network-spec.pdf) (from page 39, chapter 4)
+it refers to the [Cardano Network Specification](https://ouroboros-network.cardano.intersectmbo.org/pdfs/network-spec/network-spec.pdf) (from page 39, chapter 4)
 
 ---
 
