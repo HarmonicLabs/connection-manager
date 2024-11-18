@@ -1,6 +1,11 @@
 import { WebSocket } from "ws";
 
-export type ConnectionType = "inbound" | "outbound" | "duplex";
+export enum ConnectionType 
+{
+    Inbound = "inbound",
+    Outbound = "outbound",
+    Duplex = "duplex",
+};
 
 export enum ConnectionState 
 {
